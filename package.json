@@ -1,0 +1,26 @@
+{
+  "name": "flight-attach",
+  "description": "A Flight component for automatic component attachments through declarative binding.",
+  "version": "0.0.1",
+  "keywords": [
+    "flight",
+    "flightjs",
+    "flight-component",
+    "component",
+    "flight-attach"
+  ],
+  "devDependencies": {
+    "karma": "~0.12.0",
+    "karma-jasmine": "~0.1.0",
+    "karma-requirejs": "~0.1.0",
+    "karma-chrome-launcher": "~0.1.0",
+    "karma-ie-launcher": "~0.1.1",
+    "karma-firefox-launcher": "~0.1.0",
+    "karma-phantomjs-launcher": "~0.1.0",
+    "karma-safari-launcher": "~0.1.1"
+  },
+  "scripts": {
+    "test": "karma start --single-run --browsers PhantomJS",
+    "watch-test": "karma start"
+  }
+}
