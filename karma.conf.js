@@ -12,21 +12,21 @@ module.exports = function (config) {
     basePath: '',
 
     // frameworks to use
-    frameworks: ['jasmine'],
+    frameworks: ['jasmine', 'requirejs'],
 
     // list of files / patterns to load in the browser
     files: [
       // loaded without require
-      'bower_components/es5-shim/es5-shim.js',
-      'bower_components/es5-shim/es5-sham.js',
+      // 'bower_components/es5-shim/es5-shim.js',
+      // 'bower_components/es5-shim/es5-sham.js',
       'bower_components/jquery/dist/jquery.js',
       'bower_components/jasmine-jquery/lib/jasmine-jquery.js',
       'bower_components/jasmine-flight/lib/jasmine-flight.js',
 
 	  
       // hack to load RequireJS after the shim libs
-      'node_modules/karma-requirejs/lib/require.js',
-      'node_modules/karma-requirejs/lib/adapter.js',
+      // 'node_modules/karma-requirejs/lib/require.js',
+      // 'node_modules/karma-requirejs/lib/adapter.js',
       	  
       
       'test/components/**/*.js',
