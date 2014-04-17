@@ -12,23 +12,23 @@ module.exports = function (config) {
     basePath: '',
 
     // frameworks to use
-    frameworks: ['jasmine', 'requirejs'],
+    frameworks: [
+      'jasmine'
+    ],
 
     // list of files / patterns to load in the browser
     files: [
       // loaded without require
-      // 'bower_components/es5-shim/es5-shim.js',
-      // 'bower_components/es5-shim/es5-sham.js',
+      'bower_components/es5-shim/es5-shim.js',
+      'bower_components/es5-shim/es5-sham.js',
       'bower_components/jquery/dist/jquery.js',
       'bower_components/jasmine-jquery/lib/jasmine-jquery.js',
       'bower_components/jasmine-flight/lib/jasmine-flight.js',
 
-	  
       // hack to load RequireJS after the shim libs
-      // 'node_modules/karma-requirejs/lib/require.js',
-      // 'node_modules/karma-requirejs/lib/adapter.js',
+      'node_modules/requirejs/require.js',
+      'node_modules/karma-requirejs/lib/adapter.js',
       	  
-      
       'test/components/**/*.js',
 
       // loaded with require
@@ -66,6 +66,16 @@ module.exports = function (config) {
     // if true, it capture browsers, run tests and exit
     singleRun: false,
 
+	plugins: [
+      'karma-jasmine',
+      'karma-requirejs',
+      'karma-chrome-launcher',
+      'karma-firefox-launcher',
+      'karma-ie-launcher',
+      'karma-phantomjs-launcher',
+      'karma-safari-launcher'
+    ],
+	
     // Karma will report all the tests that are slower than given time limit (in
     // ms).
     reportSlowerThan: 500

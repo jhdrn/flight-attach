@@ -2,11 +2,19 @@
   "name": "flight-attach",
   "version": "0.0.1",
   "dependencies": {
-    "jquery": "2.x.x",
-    "flight": "~1.1.0",
-    "requirejs": "~2.1.5"
+    "flight": "~1.1.0"
   },
   "devDependencies": {
     "jasmine-flight": "~2.2.0"
-  }
+  },
+  "ignore": [
+    ".gitignore",
+    ".gitattributes",
+    ".travis.yml",
+    "CONTRIBUTING.md",
+    "CHANGELOG.md",
+    "test",
+    "package.json",
+    "karma.conf.js"
+  ]
 }

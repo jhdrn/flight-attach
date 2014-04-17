@@ -10,15 +10,20 @@
     "flight-attach"
   ],
   "devDependencies": {
-    "karma": "~0.12",
-    "karma-cli": "~0.0.4",
-    "karma-jasmine": "~0.2.1",
-    "karma-requirejs": "~0.2.1",
-    "karma-phantomjs-launcher": "~0.1.2",
-    "karma-chrome-launcher": "~0.1.0"
+    "grunt": "~0.4.1",
+    "grunt-bump": "latest",
+    "karma": "~0.10.0",
+    "karma-jasmine": "~0.1.0",
+    "karma-requirejs": "~0.2.0",
+    "karma-chrome-launcher": "~0.1.0",
+    "karma-ie-launcher": "~0.1.1",
+    "karma-firefox-launcher": "~0.1.0",
+    "karma-phantomjs-launcher": "~0.1.0",
+    "karma-safari-launcher": "~0.1.1",
+    "matchdep": "latest"
   },
   "scripts": {
-    "test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS",
-    "watch-test": "./node_modules/.bin/karma start"
+    "test": "karma start --single-run --reporters dots --browsers PhantomJS",
+    "watch-test": "karma start"
   }
 }
