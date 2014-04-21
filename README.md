@@ -2,7 +2,33 @@
 
 # flight-attach
 
-A Flight component for automatic component attachments through declarative binding.
+A Flight component for automatic component attachments using HTML data attributes.
+
+
+## Usage
+
+Start by attaching flight-attach to the document:
+
+`define('app', ['flight-attach'], function (flightAttach) {
+    flightAttach.attachTo(document);
+});`
+
+Declare any component attachments in your HTML using data-attach="componentName":
+
+`<div data-attach="componentName"></div>`
+
+
+### Mixins
+
+It's possible to use mixins too (a new "anonymous" component will be defined if only mixins are specified):
+
+`<div data-attach="componentName, mixinName"></div>`
+
+### Passing options
+
+Options are passed through the "data-option-"-prefix:
+
+`<div data-attach="myMixin" data-option-myOption="a value"></div>`
 
 
 
